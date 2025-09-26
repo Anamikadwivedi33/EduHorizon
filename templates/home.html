@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHorizon</title>
+    <!-- Correct CSS path -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">EduHorizon</div>
+        <nav class="nav">
+            <a href="#">Login</a>
+            <a href="#">Language</a>
+            <a href="#">Theme</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="content">
+        <section class="intro slide-in">
+            <h1 class="heading">Welcome to EduHorizon</h1>
+            <p class="description">
+                EduHorizon is an educational platform designed to provide personalized learning, analytics, and assessments.
+                This project will evolve to include test-taking, performance tracking, and AI-generated practice questions.
+                Explore and grow with EduHorizon!
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 EduHorizon. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
