@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduHorizon</title>
-    <!-- Correct CSS path -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
@@ -28,7 +27,16 @@
                 Explore and grow with EduHorizon!
             </p>
         </section>
+        <section class="intro slide-in">
+            <p class="description">
+                (Extra content to test scrolling...)<br><br>
+                Keep scrolling down to see the back-to-top button appear!
+            </p>
+        </section>
     </main>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop">↑</button>
 
     <!-- Footer -->
     <footer class="footer">
