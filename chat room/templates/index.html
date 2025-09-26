@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Group Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <h2>👥 Group Chat Room</h2>
+        
+        <div class="join-box">
+            <input id="username" type="text" placeholder="Enter your name">
+            <input id="room" type="text" placeholder="Enter room name">
+            <button onclick="joinRoom()">Join Room</button>
+        </div>
+
+        <div id="chat-box" style="display: none;">
+            <div id="messages"></div>
+
+            <input id="message" type="text" placeholder="Type a message..." autocomplete="off">
+            <button onclick="sendMessage()">Send</button>
+            <button onclick="leaveRoom()">Leave Room</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
