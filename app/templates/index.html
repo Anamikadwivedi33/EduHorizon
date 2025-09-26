@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flask WhatsApp Chat</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</head>
+<body>
+
+<!-- Login section -->
+<div id="login">
+    <h2>Join Chat</h2>
+    <input id="name" placeholder="Your name">
+    <input id="room" placeholder="Room (default: general)">
+    <button onclick="joinChat()">Join</button>
+</div>
+
+<!-- Chat section -->
+<div id="chat" style="display:none;">
+    <div id="chat-container">
+        <div id="users"></div>
+        <div id="messages"></div>
+        <div class="typing" id="typing"></div>
+        <div id="input-area">
+            <input id="messageInput" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

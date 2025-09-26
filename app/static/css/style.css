@@ -1,0 +1,124 @@
+ /* General page style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #e5ddd5;
+}
+
+/* Login screen */
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#login h2 {
+    margin-bottom: 20px;
+}
+
+#login input {
+    margin: 5px 0;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#login button {
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Chat screen */
+#chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#chat-container {
+    background-color: #ffffff;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Users/Room info */
+#users {
+    background-color: #ededed;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Messages area */
+#messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 20px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.message.user {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+}
+
+.message.system {
+    background-color: #f0f0f0;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Typing indicator */
+.typing {
+    font-size: 12px;
+    color: #999;
+    padding: 5px 10px;
+}
+
+/* Input area */
+#input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+#input-area input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+#input-area button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
